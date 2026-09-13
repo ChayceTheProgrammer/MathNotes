@@ -1,0 +1,26 @@
+The cleanest way to run scripts directly from Notepad++ is using its built-in Run menu.
+
+1
+Open the Run Menu
+Shortcut: F5
+Open Notepad++, navigate to the top menu bar, and click Run → Run... (or press F5).
+
+2
+Add the Python Execution Command
+In the input box, paste the following command:
+
+'cmd /k python -i "$(FULL_CURRENT_PATH)" '
+
+'cmd /k: Keeps the Command Prompt window open after the script finishes so you can read errors or inspect outputs.'
+
+'python -i: Runs your script in interactive mode so variables stay loaded in memory.'
+
+"$(FULL_CURRENT_PATH)": Automatically inserts the file path of your active tab in Notepad++.
+
+3
+Save and Map a Hotkey
+Click Save..., name the shortcut (e.g., Run Python 3.12), and choose a keyboard shortcut (such as Ctrl + Shift + F5 or F6). Click OK.
+
+
+-Debugger (GUI)
+cmd /c cd "$(CURRENT_DIRECTORY)" & python -m idlelib -d -r "$(FILE_NAME)"

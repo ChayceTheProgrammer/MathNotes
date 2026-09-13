@@ -1,0 +1,38 @@
+Asymptotic Analysis Full Write Up
+    and Perusuall summary
+
+Book:
+    #1 Given
+        f(n) =  [n*ln(n) + sqrt(n) + ln(n) + 1517*ln(ln(n))] /  n
+    Analysis:
+        the limit of most of these terms will be 0
+        when fraction is broken up (as n increases):
+        a. sqrt(n) / n          goes to 0
+        b. ln(n) / n            goes to 0
+        c. 1517*ln(ln(n))  / n  goes to 0
+        BUT the n*ln(n) / n
+            turns into ln(n) which continues to grow w/o bound as n increases
+        Thus f(n) has a growth rate similar to ln(n) as n goes to infinity
+
+    #2 the n-th Harmonic Number H_n
+        a. H_n = 1 / (1) + 1 / (2) + 1/(3) + ... + 1/n
+        b. H_n ~ ln(n)
+
+Video Notes:
+Asymptotic 1
+1) Goal: compare function f(n) with a simpler function g(n)
+    that allows us to understand the [order of growth]
+    as n→∞ (n approaches infinity)
+2) We discuss
+    1. Equality ( ~ )
+        a. lim of [f(n) / g(n)] as n infinity = 1
+            (f and g grow at the same rate as n becomes large)
+    2. Tightness (theta)
+    3. Upper Bound O,o
+    4. Lower Bounds (omega, little omega)
+3) Use notions of limits to derive asymptotic notation
+    a. precise def of limit
+4)
+
+
+

@@ -1,0 +1,37 @@
+Substitution Method
+#### The Substitution Method for Solving Recurrence Relations
+
+The substitution method is a technique used to solve recurrence relations, which are equations that describe the relationship between the time complexity of a recursive algorithm and the size of its input.
+
+The key steps in the substitution method are:
+
+**1. Guess the form of the solution**
+- Based on the given recurrence relation, make an educated guess about the form of the solution, T(n).
+- This guess should be a function of n that satisfies the recurrence.
+
+**2. Prove the guess is correct using induction**
+- Substitute the guessed solution into the original recurrence relation.
+- Use mathematical induction to show that the guessed solution satisfies the recurrence for all valid values of n.
+
+The main advantage of the substitution method is that it can be applied to a wide variety of recurrence relations, even those that are not easily solvable using the master theorem. However, the success of this method relies heavily on making a good initial guess for the solution.
+
+Here's an example of using the substitution method to solve a recurrence relation:
+
+<web>1</web>
+Suppose we have the recurrence relation:
+**T(n) = 2T(n/2) + n**
+
+**Step 1: Guess the form of the solution**
+Let's guess that the solution has the form: **T(n) = an log n**
+
+**Step 2: Prove the guess is correct using induction**
+Substitute the guessed solution into the original recurrence:
+**T(n) = 2T(n/2) + n**
+**an log n = 2a(n/2) log (n/2) + n**
+**an log n = 2an/2 log (n/2) + n**
+**an log n = an log n - an/2 + n**
+**an/2 = n**
+
+This is true for all n, so the guess is correct. Therefore, the solution to the recurrence is **T(n) = an log n**, where **a** is a constant.
+
+The substitution method requires more work than the master theorem, but it is a powerful technique for analyzing the time complexity of recursive algorithms.

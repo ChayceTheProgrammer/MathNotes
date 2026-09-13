@@ -1,0 +1,38 @@
+#### Segmented Least Squares
+
+Segmented least squares is an extension of the standard least squares method used for data fitting.
+The key idea behind segmented least squares is to split the data points into
+    a sequence of segments and fit a linear function to each segment,
+    rather than fitting a single linear function to the entire dataset.
+
+**Motivation:**
+The standard least squares method aims to fit a single linear function to a set of data points,
+    minimizing the sum of the squares of the residuals.
+However, in some cases, fitting a single linear function with a relatively small error may be impossible.
+By splitting the data into segments and fitting a linear function to each segment,
+    the segmented least squares approach can better capture the underlying structure of the data,
+    even if it is not well-described by a single linear function.
+
+**Algorithm:**
+The segmented least squares algorithm works as follows:
+
+1. **Split the data points into a sequence of segments**: The algorithm determines the optimal number and boundaries of the segments, such that the overall error (sum of squares of residuals) is minimized.
+2. **Fit a linear function to each segment**: For each segment, the algorithm finds the linear function that best fits the data points in that segment, using the standard least squares method.
+3. **Minimize the overall error**: The algorithm selects the set of segments and their corresponding linear functions that minimize the total sum of squares of residuals across all segments.
+
+**Advantages:**
+The segmented least squares approach offers several advantages over the standard least squares method:
+
+1. **Improved data fitting**: By allowing for multiple linear segments, the segmented least squares method can better capture the underlying structure of the data, even if it is not well-described by a single linear function.
+2. **Interpretability**: The segmented least squares model can provide more interpretable insights into the data, as the different segments may correspond to distinct phases or regimes within the data.
+3. **Robustness to outliers**: The segmented least squares approach is generally more robust to outliers, as the impact of outliers is limited to the segment in which they occur, rather than affecting the entire model.
+
+**Applications:**
+Segmented least squares has a wide range of applications, including:
+
+- **Time series analysis**: Identifying structural changes or regime shifts in time series data.
+- **Regression analysis**: Modeling complex relationships that cannot be well-described by a single linear function.
+- **Curve fitting**: Approximating non-linear functions using piecewise linear segments.
+- **Anomaly detection**: Identifying unusual data points or segments that deviate from the overall trend.
+
+Overall, segmented least squares is a powerful tool for data analysis and modeling, providing a flexible and interpretable approach to fitting linear functions to complex datasets.

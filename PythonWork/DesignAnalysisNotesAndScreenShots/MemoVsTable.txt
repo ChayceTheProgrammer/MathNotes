@@ -1,0 +1,76 @@
+DynamicProgramming
+You're right to focus on memoization and tabulation! These are the two main ways to implement dynamic programming, and they have distinct advantages and disadvantages. Let's break down the differences:
+
+**1. Memoization: Top-Down Approach**
+
+* **Concept:** Memoization is a top-down approach. You start by defining a recursive function that solves the problem. However, instead of calculating the same subproblems repeatedly, you store the results of each subproblem in a cache (usually a hash table or dictionary).  If the function is called with an input it has already seen, it simply retrieves the result from the cache instead of recalculating it.
+
+* **How it works:**
+    1. Define a recursive function to solve the problem.
+    2. Initialize a cache (e.g., a dictionary).
+    3. Inside the recursive function, check if the result for the current input is already in the cache.
+    4. If it's not, calculate the result, store it in the cache, and return it.
+    5. If it is, simply return the cached result.
+
+* **Advantages:**
+    - **Intuitive:**  It's often easier to think about a problem recursively and then apply memoization.
+    - **Flexibility:** You can memoize individual functions or parts of your code, making it adaptable to different situations.
+
+* **Disadvantages:**
+    - **Space Complexity:**  Memoization can lead to higher space complexity if the cache grows large.
+    - **Overhead:**  The overhead of checking the cache for each call can sometimes outweigh the benefits of avoiding redundant calculations.
+
+**2. Tabulation: Bottom-Up Approach**
+
+* **Concept:** Tabulation is a bottom-up approach. You build a table (usually an array or matrix) that stores the solutions to all possible subproblems. You start by filling in the table with the solutions to the smallest subproblems, and then use those solutions to calculate the solutions to larger subproblems.
+
+* **How it works:**
+    1. Define a table to store the solutions to subproblems.
+    2. Fill in the table with the base cases (smallest subproblems).
+    3. Iterate through the table, calculating the solution for each subproblem using the solutions to smaller subproblems that have already been computed.
+
+* **Advantages:**
+    - **Space Efficiency:** Tabulation can be more space-efficient than memoization, as you only store the solutions you need.
+    - **Optimized for Iteration:**  Tabulation often leads to cleaner and more efficient code, as you're explicitly iterating through the table and avoiding recursive calls.
+
+* **Disadvantages:**
+    - **Less Intuitive:**  It can be harder to conceptualize the problem in a bottom-up fashion.
+    - **Less Flexible:**  Tabulation is less flexible than memoization, as you need to design the table structure upfront.
+
+**Example: Fibonacci Sequence**
+
+Let's illustrate with the classic Fibonacci sequence example:
+
+**Memoization:**
+
+```python
+def fibonacci(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)
+    return memo[n]
+
+print(fibonacci(5))  # Output: 5
+```
+
+**Tabulation:**
+
+```python
+def fibonacci(n):
+    table = [0] * (n+1)
+    table[0] = 0
+    table[1] = 1
+    for i in range(2, n+1):
+        table[i] = table[i-1] + table[i-2]
+    return table[n]
+
+print(fibonacci(5))  # Output: 5
+```
+
+**Choosing the Right Approach**
+
+The choice between memoization and tabulation often depends on the specific problem and your coding style. Memoization is generally more intuitive, while tabulation can be more efficient for certain problems.  
+
+Feel free to ask if you'd like to explore specific examples or have more questions about memoization or tabulation! 

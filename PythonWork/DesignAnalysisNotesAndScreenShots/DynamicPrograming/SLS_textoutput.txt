@@ -1,0 +1,18 @@
+The output shows the fitted x-vals, (predicted) y-values, slopes, intercepts,
+    and segment boundaries for a dataset fitted with two segments.
+
+Fitted values: These are the y-values predicted by the model for each x-value.
+    Notice a clear change in slope around x-value 50, reflecting the two segments.
+
+Slopes:
+    These values suggest a positive relationship between x and y in both segments,
+    but with a steeper slope in the second segment.
+
+Intercepts:
+    These represent the y-intercept of each segment's fitted line.
+
+Segment boundaries:
+    The segment boundaries are at indices 0 and 50,
+    indicating that the first segment covers x-values from 0 to 50 (approximately),
+    and the second segment covers x-values from 50 to 100.
+

@@ -1,0 +1,253 @@
+{
+  "addToCommand": true,
+  "addToContextMenu": true,
+  "createInstanceNearExistingOnes": true,
+  "errorNoticeTimeout": 0,
+  "exposeInternalModules": true,
+  "focusOnNewInstance": true,
+  "hideStatusBar": "focused",
+  "showTerminalTabPrefix": false,
+  "interceptKeysWhenFocused": true,
+  "interceptLogging": true,
+  "keymappings": [
+    {
+      "action": "sendEscapeSequence",
+      "actionArg": "\r",
+      "alt": false,
+      "ctrl": false,
+      "key": "Enter",
+      "meta": false,
+      "platform": null,
+      "shift": true
+    },
+    {
+      "action": "scrollPages",
+      "actionArg": -1,
+      "alt": false,
+      "ctrl": false,
+      "key": "PageUp",
+      "meta": false,
+      "platform": null,
+      "shift": false
+    },
+    {
+      "action": "scrollPages",
+      "actionArg": 1,
+      "alt": false,
+      "ctrl": false,
+      "key": "PageDown",
+      "meta": false,
+      "platform": null,
+      "shift": false
+    },
+    {
+      "action": "scrollToTop",
+      "actionArg": null,
+      "alt": false,
+      "ctrl": false,
+      "key": "Home",
+      "meta": false,
+      "platform": null,
+      "shift": false
+    },
+    {
+      "action": "scrollToBottom",
+      "actionArg": null,
+      "alt": false,
+      "ctrl": false,
+      "key": "End",
+      "meta": false,
+      "platform": null,
+      "shift": false
+    },
+    {
+      "action": "sendEscapeSequence",
+      "actionArg": "b",
+      "alt": true,
+      "ctrl": false,
+      "key": "ArrowLeft",
+      "meta": false,
+      "platform": "darwin",
+      "shift": false
+    },
+    {
+      "action": "sendEscapeSequence",
+      "actionArg": "f",
+      "alt": true,
+      "ctrl": false,
+      "key": "ArrowRight",
+      "meta": false,
+      "platform": "darwin",
+      "shift": false
+    },
+    {
+      "action": "sendHexCode",
+      "actionArg": "01",
+      "alt": false,
+      "ctrl": false,
+      "key": "ArrowLeft",
+      "meta": true,
+      "platform": "darwin",
+      "shift": false
+    },
+    {
+      "action": "sendHexCode",
+      "actionArg": "05",
+      "alt": false,
+      "ctrl": false,
+      "key": "ArrowRight",
+      "meta": true,
+      "platform": "darwin",
+      "shift": false
+    },
+    {
+      "action": "sendHexCode",
+      "actionArg": "17",
+      "alt": true,
+      "ctrl": false,
+      "key": "Backspace",
+      "meta": false,
+      "platform": "darwin",
+      "shift": false
+    },
+    {
+      "action": "sendHexCode",
+      "actionArg": "15",
+      "alt": false,
+      "ctrl": false,
+      "key": "Backspace",
+      "meta": true,
+      "platform": "darwin",
+      "shift": false
+    },
+    {
+      "action": "sendEscapeSequence",
+      "actionArg": "d",
+      "alt": true,
+      "ctrl": false,
+      "key": "Delete",
+      "meta": false,
+      "platform": "darwin",
+      "shift": false
+    }
+  ],
+  "language": "",
+  "macOSOptionKeyPassthrough": true,
+  "rightClickAction": "copyPaste",
+  "newInstanceBehavior": "newHorizontalSplit",
+  "noticeTimeout": 5,
+  "openChangelogOnUpdate": true,
+  "pinNewInstance": true,
+  "preferredRenderer": "webgl",
+  "profiles": {
+    "developerConsole": {
+      "followTheme": true,
+      "name": "",
+      "restoreHistory": false,
+      "rightClickAction": "copyPaste",
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "developerConsole"
+    },
+    "win32ExternalDefault": {
+      "args": [],
+      "environment": [],
+      "executable": "C:\\Windows\\System32\\cmd.exe",
+      "followTheme": true,
+      "name": "",
+      "platforms": {
+        "win32": true
+      },
+      "restoreHistory": false,
+      "rightClickAction": "copyPaste",
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "external"
+    },
+    "win32IntegratedDefault": {
+      "args": [],
+      "environment": [],
+      "executable": "C:\\Windows\\System32\\cmd.exe",
+      "followTheme": true,
+      "name": "",
+      "platforms": {
+        "win32": true
+      },
+      "pythonExecutable": "python3",
+      "restoreHistory": false,
+      "rightClickAction": "copyPaste",
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "integrated",
+      "useWin32Conhost": true
+    },
+    "cad5ac6e-a1ef-4d01-9b8c-61d48d7e4c13": {
+      "args": [],
+      "environment": [],
+      "executable": "powershell",
+      "followTheme": true,
+      "name": "PowerShell (Int)",
+      "platforms": {
+        "win32": true
+      },
+      "pythonExecutable": "python3",
+      "restoreHistory": true,
+      "rightClickAction": "copyPaste",
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "integrated",
+      "useWin32Conhost": true
+    },
+    "db4464fc-f282-4714-a63a-f2327ca26845": {
+      "args": [],
+      "environment": [],
+      "executable": "C:\\Windows\\System32\\cmd.exe",
+      "followTheme": true,
+      "name": "Cmd (Int)",
+      "platforms": {
+        "win32": true
+      },
+      "pythonExecutable": "python3",
+      "restoreHistory": false,
+      "rightClickAction": "copyPaste",
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {
+        "documentOverride": null
+      },
+      "type": "integrated",
+      "useWin32Conhost": true
+    }
+  },
+  "defaultProfile": null,
+  "terminalOptions": {
+    "documentOverride": null
+  }
+}

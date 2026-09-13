@@ -1,0 +1,30 @@
+Master Theorem for Divide and Conquer Algorithms
+#### The Master Theorem for Design Analysis of Algorithms
+
+The Master Theorem is a powerful tool used to analyze the time 
+	complexity of divide-and-conquer algorithms. 
+It provides a direct way to determine the asymptotic behavior of 
+	recurrence relations that arise from such algorithms.
+
+The general form of the recurrence relation that the Master Theorem can be applied to is:
+
+T(n) = a * T(n/b) + f(n)
+
+Where:
+- T(n) is the time complexity of the algorithm for an input size of **n**
+- a is the number of subproblems the original problem is divided into
+- n/b is the size of each subproblem
+- f(n) is the time complexity of the "combine" step, where the solutions to the subproblems are combined to solve the original problem
+
+The Master Theorem states that the solution to this recurrence relation depends on the relationship between **a**, **b**, and **f(n)**:
+
+**Case 1:** If **a > b^k**, then **T(n) = Θ(n^(log_b a))**.
+
+**Case 2:** If **a = b^k**, then **T(n) = Θ(n^k * log n)**.
+
+**Case 3:** If **a < b^k** and **f(n) = O(n^(log_b a - ε))** for some constant **ε > 0**, then **T(n) = Θ(f(n))**.
+
+The Master Theorem is a powerful tool because it allows us to quickly determine 
+	the time complexity of many divide-and-conquer algorithms without 
+	having to solve the recurrence relation explicitly. 
+

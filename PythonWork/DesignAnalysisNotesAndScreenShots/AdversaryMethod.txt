@@ -1,0 +1,59 @@
+Adversary Technique (for LowerBounds)
+
+#### Using Adversary Techniques to Derive Lower Bounds
+
+The adversary technique is a powerful method for proving lower bounds on the time complexity of algorithms. The key idea is to construct an "adversary" that tries to make the algorithm perform as much work as possible, thereby establishing a lower bound on the algorithm's running time.
+
+Here's how to use the adversary technique to derive lower bounds:
+
+**1. Identify the Problem**
+- Start by clearly defining the problem you want to analyze and the set of possible inputs.
+
+**2. Construct the Adversary**
+- Imagine an "adversary" that controls the input to the algorithm and 
+	tries to make the algorithm perform as much work as possible.
+- The adversary should be able to respond to the algorithm's queries in a way that forces the algorithm 
+	to explore as many possible inputs as possible.
+
+**3. Analyze the Adversary's Responses**
+- Carefully analyze the adversary's responses to the algorithm's queries.
+- Determine the minimum number of queries the algorithm must make to solve the problem, no matter how the adversary responds.
+- This minimum number of queries establishes a lower bound on the algorithm's time complexity.
+
+**4. Prove the Lower Bound**
+- Use mathematical reasoning to prove that the lower bound derived from the adversary's 
+	responses is indeed a valid lower bound for the problem.
+- This may involve showing that the adversary's responses are consistent 
+	and that the algorithm cannot do better than the lower bound.
+
+The adversary technique is particularly useful for proving lower bounds on 
+	comparison-based sorting algorithms, selection problems, 
+	and other fundamental algorithmic problems. 
+By constructing a clever adversary, you can often 
+	establish non-trivial lower bounds that cannot be easily obtained through other techniques.
+
+Here's an example of using the adversary technique 
+	to derive a lower bound for the comparison-based sorting problem:
+
+**Problem**: Prove that any comparison-based sorting algorithm requires Ω(n log n) time in the worst case.
+
+**Adversary Strategy**: 
+	The adversary maintains a set of possible inputs 
+		that are consistent with the algorithm's queries so far. 
+	Initially, the set contains all n! possible permutations of the input. 
+	Whenever the algorithm makes a comparison between two elements, 
+		the adversary responds in a way that keeps the set of possible inputs as large as possible. 
+	Specifically, the adversary responds by saying the two elements are equal 
+		if that is consistent with the current set of possible inputs, 
+		and otherwise, the adversary responds by saying the elements are 
+		ordered in a way that maintains the largest set of possible inputs.
+
+**Lower Bound Proof**: By the adversary's strategy, the algorithm must make at least 
+	log₂(n!) = Ω(n log n) comparisons to uniquely identify the correct permutation, 
+	as each comparison can only rule out at most half of the remaining possible inputs. 
+	Therefore, any comparison-based sorting algorithm requires Ω(n log n) time in the worst case.
+
+The adversary technique is a powerful tool for deriving non-trivial lower bounds 
+	on the time complexity of algorithms. 
+By carefully constructing an adversary that forces the algorithm to perform as much work as possible, 
+	you can establish fundamental limits on the efficiency of algorithms.

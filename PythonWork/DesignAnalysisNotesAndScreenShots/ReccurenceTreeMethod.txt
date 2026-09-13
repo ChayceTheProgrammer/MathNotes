@@ -1,0 +1,48 @@
+Recurrence Tree Method
+
+#### Using Recursion Trees to Solve Recurrence Relations
+
+The recursion tree method is a visual technique used to solve recurrence relations that arise from recursive algorithms. 
+It involves constructing a tree-like diagram that represents the recursive calls made by the algorithm.
+
+Here's how to use the recursion tree method:
+
+**1. Draw the Recursion Tree**
+- Start with the initial problem size, n, as the root of the tree.
+- For each recursive call, add child nodes representing the subproblems.
+- The number of child nodes should match the number of subproblems (a in the recurrence relation).
+- The size of each subproblem should be n/b, where b is the branching factor.
+
+**2. Analyze the Recursion Tree**
+- Assign a cost to each node in the tree, which represents the work done for that subproblem.
+- The cost of the root node is typically f(n), the work done in the "combine" step.
+- The cost of the child nodes is typically the same, which is T(n/b).
+
+**3. Compute the Total Cost**
+- Sum up the costs of all the nodes in the tree to get the total cost of the recursive algorithm.
+- This total cost represents the time complexity of the algorithm.
+
+The key advantage of the recursion tree method is that it provides a visual representation of the recurrence relation, 
+	making it easier to understand the underlying structure of the algorithm. 
+It can be particularly useful when the master theorem cannot be directly applied, 
+	or when you need to gain more intuition about the behavior of the algorithm.
+
+Here's an example of using the recursion tree method to solve a recurrence relation:
+
+Suppose we have the recurrence relation: **T(n) = 2T(n/2) + n**
+
+**1. Draw the Recursion Tree**
+The tree would have 2 child nodes at each level, since a = 2 in the recurrence relation. 
+	The size of each subproblem is n/2, since b = 2.
+
+**2. Analyze the Recursion Tree**
+The cost of the root node is n, and the cost of each child node is T(n/2).
+
+**3. Compute the Total Cost**
+The total cost of the tree can be expressed as:
+**T(n) = n + 2T(n/2)**
+
+This matches the original recurrence relation, so the solution is **T(n) = n log n**.
+
+The recursion tree method is a powerful tool for understanding and solving recurrence relations, 
+	especially when the master theorem cannot be directly applied.
