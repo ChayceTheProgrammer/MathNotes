@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm,latexsym,paralist}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem*{solution}{Solution}
+\newtheorem*{resources}{Resources}
+
+\newcommand{\name}[1]{\noindent\textbf{Name: #1}}
+\newcommand{\honor}{\noindent On my honor, as an Aggie, I have neither
+  given nor received any unauthorized aid on any portion of the
+  academic work included in this assignment. This work is my own. Furthermore, I have
+  disclosed all resources (people, books, web sites, etc.) that have
+  been used to prepare this homework. Looking up solutions is prohibited. \\[1ex]
+ \textbf{Signature:} \underline{\hspace*{5cm}} }
+
+\newcommand{\checklist}{\noindent\textbf{Checklist:}
+\begin{compactitem}[$\Box$] 
+\item Did you add your name? 
+\item Did you disclose all resources that you have used? \\
+(This includes all people, books, websites, etc. that you have consulted)
+\item Did you sign that you followed the Aggie honor code? 
+\item Did you solve all problems? 
+\item Did you submit the pdf file of your homework?
+\end{compactitem}
+}
+
+
+
+\newcommand{\problemset}[1]{\begin{center}\textbf{Problem Set
+      #1}\end{center}}
+\newcommand{\duedate}[1]{\begin{quote}\textbf{Due date:} Electronic
+    submission of the pdf file of this homework is due on
+    \textbf{#1} on canvas. \end{quote} }
+
+\newcommand{\N}{\mathbf{N}}
+\newcommand{\R}{\mathbf{R}}
+\newcommand{\Z}{\mathbf{Z}}
+
+
+\begin{document}
+\problemset{6}
+\duedate{3/7/2025 before 11:59pm}
+\name{ (put your name here)}
+\begin{resources} (All people, books, articles, web pages, etc. that
+  have been consulted when producing your answers to this homework)
+\end{resources}
+\honor
+
+\newpage
+\textbf{Make sure that you describe all solutions in your own
+words, and that the work presented is your own!} Typesetting in
+\LaTeX{} is required. Read the chapter on amortized analysis in our textbook. 
+
+\begin{problem}[20 points]
+  Suppose that you have a row of coins with values that are positive
+  integers $v_1, v_2, \ldots, v_n$. These values are not necessarily
+  distinct. The goal is to pick up the highest total value of coins as possible. However,
+  one cannot pick up two coins that are adjacent to each
+  other. (a) Describe an algorithmic solution that is based on the dynamic
+  programming principle. Carefully explain why your solution is
+  correct. (b) What is the solution for coins with
+  values (25,5,5,25,10,10,5,25,1).
+\end{problem}  
+\begin{solution}
+\end{solution}
+
+\begin{problem}[10 points] In the lecture, we discussed a stack with
+  PUSH, POP, and MULTIPOP operations.  If the set of stack operations
+  included a MULTIPUSH operation, which pushes $k$ items onto the
+  stack, would the $O(1)$ bound on the amortized cost of stack
+  operations continue to hold?
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\begin{problem}[10 points]
+  In the lecture, we discussed a $k$-bit counter with an INCREMENT
+  operation.  Show that if a DECREMENT operation were included in the $k$-bit
+  counter example, $n$ operations could cost as much as $\Theta(nk)$
+  time.
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\begin{problem}[20 points] \label{base}
+  Suppose we perform a sequence of $n$ operations on a data structure
+  in which the $i$-th operation costs $i$ if $i$ is an exact power of
+  $2$, and $1$ otherwise. Use aggregate analysis to determine the
+  amortized cost per operation.
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\begin{problem}[20 points]
+ Redo Problem~\ref{base} using an accounting method of analysis.
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\begin{problem}[20 points]
+Redo Problem~\ref{base} using a potential method of analysis.
+\end{problem}
+\begin{solution}
+\end{solution}
+
+
+Discussions on canvas are always encouraged, especially to clarify
+concepts that were introduced in the lecture. However, discussions of
+homework problems on canvas should not contain spoilers. It is okay to
+ask for clarifications concerning homework questions if needed. Make
+sure that you write the solutions in your own words. 
+
+
+\medskip
+
+
+
+\goodbreak
+\checklist
+\end{document}

@@ -12,8 +12,8 @@ What is Mathematics? How Cliche...
 
 - In High School, most problems focus on finding a solution to a __numerical__ question (i.e. solve for x)
 
-- College math expands this to dealing with sets of solutions, functions, and grander mathematical objects 
-The connective tissue of these endeavors is **deductive reasoning**. 
+- College math expands this to dealing with sets of solutions, functions, and grander mathematical objects
+The connective tissue of these endeavors is **deductive reasoning**.
 
 **Deductive Reasoning** is usually showcased with a proof. This book and these notes will help develop the skill of writing and reading proofs and understanding mathematical reasoning.
 
